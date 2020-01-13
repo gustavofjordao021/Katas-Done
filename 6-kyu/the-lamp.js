@@ -5,21 +5,28 @@
 
 class Lamp {
     constructor(color) {
-        this.color = "Blue";
+        this.color = color;
         this.on = false
     }
 
-    toggleSwitch = () => {
-        this.on = true;
-    }
+    toggleSwitch() {
+      switch (this.on) {
+        case false:
+          this.on = true;
+          break;
+        case true:
+          this.on = false;
+          break;
+      }
+    } 
 
-    state = () => {
-        switch (this.color) {
+    state() {
+        switch (this.on) {
             case true:
-                return "The lamp is on";
+                return "The lamp is on.";
                 break;
             case false:
-                return "The lamp is off";
+                return "The lamp is off.";
                 break;
         }
     }
