@@ -21,6 +21,8 @@ const someArr1 = [
 // solution:
 console.log(concatFirstDiagonal(someArr1));
 // ==> "Lisbon"
+
+
 Iteration 2
 From a two dimensional array (with the same height and width), extract and concat all the elements from the "second diagonal", starting from the top right corner to the bottom left corner.
 
@@ -40,12 +42,4 @@ const someArr2 = [
 
 // solution:
 console.log(concatSecondDiagonal(someArr2));
-// ==> "Berlin"
-Submission
-Submitting katas is not mandatory. We will provide solutions on or after every class or at the end of the week, depending on how we agree on it.
-
-However, you should save your work on your GitHub profile. If you still haven't created a repo with katas on your GitHub profile, this should be an excellent moment to do so.
-
-Please create a new file locally and push it on the remote repository with all the katas (on your GH profile). If you have any doubts on how to connect your local and remote repos, please refer to the following docs: How to connect local and remote repos?
-
-Happy coding! 💙 -->
+// ==> "Berlin"--!>
