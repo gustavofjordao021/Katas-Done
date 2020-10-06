@@ -1,5 +1,7 @@
 // link: https://www.codewars.com/kata/550f22f4d758534c1100025a
+
 // Once upon a time, on a way through the old wild mountainous west,…
+
 // … a man was given directions to go from one point to another. The directions were "NORTH", "SOUTH", "WEST", "EAST". Clearly "NORTH" and "SOUTH" are opposite, "WEST" and "EAST" too.
 // Going to one direction and coming back the opposite direction right away is a needless effort. Since this is the wild west, with dreadfull weather and not much water, it's important to save yourself some energy, otherwise you might die of thirst!
 
@@ -15,24 +17,23 @@ let directions = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"];
 
 function dirReduc(arr) {
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == "NORTH" && arr[i+1] == "SOUTH") {
+    if (arr[i] == "NORTH" && arr[i + 1] == "SOUTH") {
       arr.splice(i, 2);
       i -= 2;
-      continue
-    } else if (arr[i] == "SOUTH" && arr[i+1] == "NORTH") {
+      continue;
+    } else if (arr[i] == "SOUTH" && arr[i + 1] == "NORTH") {
       arr.splice(i, 2);
       i -= 2;
-      continue
-    } else if (arr[i] == "EAST" && arr[i+1] == "WEST") {
+      continue;
+    } else if (arr[i] == "EAST" && arr[i + 1] == "WEST") {
       arr.splice(i, 2);
       i -= 2;
-      continue
-    } else if (arr[i] == "WEST" && arr[i+1] == "EAST") {
+      continue;
+    } else if (arr[i] == "WEST" && arr[i + 1] == "EAST") {
       arr.splice(i, 2);
       i -= 2;
-      continue
+      continue;
     }
   }
   return arr;
 }
-
